@@ -24,13 +24,15 @@ namespace UHFPS.Runtime
         {
             // Auto-find the circuit puzzle if not assigned
             if (circuitPuzzle == null)
-                circuitPuzzle = FindObjectOfType<ElectricalCircuitPuzzle>();
-                
+                circuitPuzzle = UnityEngine.Object.FindFirstObjectByType<ElectricalCircuitPuzzle>();
+
             // Auto-find electrical devices if selected
             if (autoFindDevices)
-                electricalDevices.AddRange(FindObjectsOfType<ElectricalDevice>());
+                electricalDevices.AddRange(UnityEngine.Object.FindObjectsByType<ElectricalDevice>(FindObjectsSortMode.None));
         }
-        
+
+
+
         private void OnEnable()
         {
             if (circuitPuzzle != null)
