@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb5bd7e8a706a41b793e7440b34eea, type: 3}
+  m_Name: (VoiceOver) So this is it
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - DialogueAudio: {fileID: 8300000, guid: 1c47cbfadb64a074395bb8c66b7b927f, type: 3}
+    SubtitleType: 0
+    SingleSubtitle:
+      Time: 0
+      Narrator: Me
+      NarratorColor: {r: 0.8207547, g: 0.14324492, b: 0.14324492, a: 1}
+      Text:
+        GlocText: '*So this is it... the Drakemore estate. Bigger than I imagine.
+          colder too.'
+        NormalText: 
+    Subtitles: []
+  references:
+    version: 2
+    RefIds: []
