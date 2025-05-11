@@ -1,0 +1,23 @@
+# Unity-specific ignore rules
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild*/
+obj/
+MemoryCaptures/
+Logs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Ignore specific folders inside Assets
+Assets/Horror_Mansion/
+Assets/ThunderWire Studio/
