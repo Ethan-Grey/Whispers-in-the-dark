@@ -1,79 +1,69 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class StatuesController : MonoBehaviour
+public class StatueController : MonoBehaviour
 {
-    [System.Serializable]
-    public class StatueData
+    [Header("Rotation Settings")]
+    public float rotationIncrement = 45f; // Amount to rotate per interaction
+    public float alignmentThreshold = 1f;
+    public float targetRotationZ = 225.923f;
+
+    [Header("Interaction")]
+    [SerializeField] private bool canRotate = false; // Private by default, shown in Inspector
+    public UnityEvent onStatueAligned;
+    public Transform childSphere;
+
+    private bool isAligned = false;
+
+    /// <summary>
+    /// Call this to allow the statue to rotate.
+    /// </summary>
+    public void EnableRotation()
     {
-        public string conditionName;               // The condition name to unlock rotation
-        public GameObject statue;                  // Reference to statue GameObject
-        public float rotationAmount = 90f;         // How much it rotates when triggered
-        public float targetZRotation;              // The target Z rotation (this is the specific angle)
-        [HideInInspector] public bool canRotate = false;
-        [HideInInspector] public bool hasReachedTarget = false;
+        canRotate = true;
+        Debug.Log("🟢 Statue rotation ENABLED.");
     }
 
-    public List<StatueData> statues = new List<StatueData>();
-    public UnityEvent onAllStatuesCorrectlyRotated; // The UnityEvent to call when all statues are rotated
-
-    // Call this to unlock rotation for a specific statue
-    public void EnableRotationByCondition(string conditionName)
+    /// <summary>
+    /// Call this to prevent the statue from rotating.
+    /// </summary>
+    public void DisableRotation()
     {
-        foreach (var statue in statues)
+        canRotate = false;
+        Debug.Log("🔴 Statue rotation DISABLED.");
+    }
+
+    public void RotateStatue()
+    {
+        if (!canRotate || isAligned) return;
+
+        Vector3 currentRotation = transform.eulerAngles;
+
+        float newZ = (currentRotation.z + rotationIncrement) % 360f;
+
+        transform.rotation = Quaternion.Euler(currentRotation.x, currentRotation.y, newZ);
+
+        CheckAlignment();
+    }
+
+    private void CheckAlignment()
+    {
+        float currentZ = transform.eulerAngles.z;
+        float difference = Mathf.Abs(Mathf.DeltaAngle(currentZ, targetRotationZ));
+
+        if (!isAligned && difference <= alignmentThreshold)
         {
-            if (statue.conditionName.Equals(conditionName, System.StringComparison.OrdinalIgnoreCase))
-            {
-                statue.canRotate = true;
-                Debug.Log($"Rotation enabled for: {statue.conditionName}");
-                return;
-            }
+            isAligned = true;
+            onStatueAligned?.Invoke();
         }
-
-        Debug.LogWarning($"No statue found with condition name: {conditionName}");
     }
 
-    // Call this from UHFPS or a key press to rotate a statue
-    public void RotateStatue(int index)
+    private void OnTriggerEnter(Collider other)
     {
-        if (index < 0 || index >= statues.Count) return;
-
-        StatueData statue = statues[index];
-
-        if (!statue.canRotate || statue.hasReachedTarget) return;
-
-        statue.statue.transform.Rotate(0f, 0f, statue.rotationAmount);
-
-        float currentZ = NormalizeAngle(statue.statue.transform.eulerAngles.z);
-        float targetZ = NormalizeAngle(statue.targetZRotation);
-
-        if (Mathf.Abs(Mathf.DeltaAngle(currentZ, targetZ)) < 1f)
+        if (other.CompareTag("TargetSphere"))
         {
-            statue.hasReachedTarget = true;
-            statue.canRotate = false;
-            Debug.Log($"{statue.conditionName} reached target rotation!");
+            Debug.Log("✅ Trigger event: Statue sphere collided with target sphere!");
+            onStatueAligned?.Invoke();
         }
-
-        CheckAllStatues();
-    }
-
-    void CheckAllStatues()
-    {
-        foreach (var statue in statues)
-        {
-            if (!statue.hasReachedTarget)
-                return;
-        }
-
-        Debug.Log("All statues are correctly rotated!");
-        onAllStatuesCorrectlyRotated.Invoke(); // This will invoke the UnityEvent when all statues are rotated correctly
-    }
-
-    float NormalizeAngle(float angle)
-    {
-        angle %= 360f;
-        if (angle < 0) angle += 360f;
-        return angle;
     }
 }
