@@ -1,18 +1,18 @@
 {
-  "id": "3235c6c097ed4935907857bd871f5fa4",
+  "id": "bca917563bdc4f27a6c5f9c781e2303d",
   "playerData": {
     "position": {
-      "x": 263.652985,
-      "y": 5.99999952,
-      "z": 250.871414
+      "x": 270.9167,
+      "y": 2.00000167,
+      "z": 255.80423
     },
     "rotation": {
-      "x": 138.209946,
-      "y": -26.5499725
+      "x": 90.1433945,
+      "y": -10.7489567
     },
     "localData": {
       "health": 100,
-      "selectedItem": -1,
+      "selectedItem": 5,
       "playerItems": {
         "playerItem_0": {
           "recordingTime": 0,
@@ -28,7 +28,7 @@
           "batteryEnergy": 320.0
         },
         "playerItem_5": {
-          "currentFuel": 60.0
+          "currentFuel": 12.9148464
         },
         "playerItem_6": {},
         "playerItem_7": {},
@@ -41,15 +41,75 @@
     "globalData": {
       "inventory": {
         "expanded": 0,
-        "items": {},
+        "items": {
+          "item_0": {
+            "item": "cc6f1cc8ccdc4588b87a90062377e156",
+            "quantity": 1,
+            "orientation": 0,
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "customData": {}
+          },
+          "item_1": {
+            "item": "9c45e9931ae9492dba1cf41854f95de0",
+            "quantity": 7,
+            "orientation": 0,
+            "position": {
+              "x": 2,
+              "y": 0
+            },
+            "customData": {}
+          },
+          "item_2": {
+            "item": "3905d98ae65b4984a9b8fe2e994d6ead",
+            "quantity": 4,
+            "orientation": 0,
+            "position": {
+              "x": 3,
+              "y": 0
+            },
+            "customData": {}
+          },
+          "item_3": {
+            "item": "909de296f696478a8360e2b61f38fa08",
+            "quantity": 1,
+            "orientation": 0,
+            "position": {
+              "x": 4,
+              "y": 0
+            },
+            "customData": {}
+          }
+        },
         "shortcuts": {
           "shortcut_0": "{}",
           "shortcut_1": "{}",
-          "shortcut_2": "{}",
+          "shortcut_2": "cc6f1cc8ccdc4588b87a90062377e156",
           "shortcut_3": "{}"
         }
       },
-      "objectives": {}
+      "objectives": {
+        "Explore": {
+          "isCompleted": true,
+          "subObjectives": {
+            "Explore": {
+              "completeCount": 1,
+              "isCompleted": true
+            }
+          }
+        },
+        "TurnPowerOn": {
+          "isCompleted": true,
+          "subObjectives": {
+            "TurnPowerOn": {
+              "completeCount": 1,
+              "isCompleted": true
+            }
+          }
+        }
+      }
     }
   },
   "worldState": {
