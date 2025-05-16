@@ -4,9 +4,13 @@ using UnityEngine.Events;
 public class StatueSphereTrigger : MonoBehaviour
 {
     [Header("Target Settings")]
-    public string targetTag = "TargetSphere"; // Make sure the target sphere is tagged with this
+    public string targetTag = "TargetSphere";
 
-    [Header("Events")]
+    [Header("Statue Settings")]
+    public int statueIndex; // Unique index (e.g., 0, 1, 2)
+    public StatueAlignmentManager manager; // Assign in Inspector!
+
+    [Header("Optional Events")]
     public UnityEvent onSphereAligned;
     public UnityEvent onSphereExited;
 
@@ -17,7 +21,8 @@ public class StatueSphereTrigger : MonoBehaviour
         if (!isInside && other.CompareTag(targetTag))
         {
             isInside = true;
-            Debug.Log("✅ Statue's child sphere is staying inside the target!");
+            Debug.Log($"✅ Statue {statueIndex} sphere aligned.");
+            manager?.SetStatueAligned(statueIndex, true);
             onSphereAligned?.Invoke();
         }
     }
@@ -27,7 +32,8 @@ public class StatueSphereTrigger : MonoBehaviour
         if (isInside && other.CompareTag(targetTag))
         {
             isInside = false;
-            Debug.Log("❌ Statue's child sphere exited the target!");
+            Debug.Log($"❌ Statue {statueIndex} sphere exited.");
+            manager?.SetStatueAligned(statueIndex, false);
             onSphereExited?.Invoke();
         }
     }
