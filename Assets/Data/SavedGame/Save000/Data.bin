@@ -1,0 +1,109 @@
+{
+  "id": "8a0ce89d886f46398f6fed5beeee656b",
+  "playerData": {
+    "position": {
+      "x": 272.769348,
+      "y": 10.0000019,
+      "z": 265.245178
+    },
+    "rotation": {
+      "x": 88.70954,
+      "y": -17.40001
+    },
+    "localData": {
+      "health": 100,
+      "selectedItem": -1,
+      "playerItems": {
+        "playerItem_0": {
+          "recordingTime": 0,
+          "batteryEnergy": 100.0,
+          "nightVision": false
+        },
+        "playerItem_1": {},
+        "playerItem_2": {},
+        "playerItem_3": {
+          "flashlightAttached": false
+        },
+        "playerItem_4": {
+          "batteryEnergy": 320.0
+        },
+        "playerItem_5": {
+          "currentFuel": 60.0
+        },
+        "playerItem_6": {},
+        "playerItem_7": {},
+        "playerItem_8": {
+          "baseTemp": 23.0
+        },
+        "playerItem_9": {}
+      }
+    },
+    "globalData": {
+      "inventory": {
+        "expanded": 0,
+        "items": {
+          "item_0": {
+            "item": "cc6f1cc8ccdc4588b87a90062377e156",
+            "quantity": 1,
+            "orientation": 0,
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "customData": {}
+          },
+          "item_1": {
+            "item": "9c45e9931ae9492dba1cf41854f95de0",
+            "quantity": 8,
+            "orientation": 0,
+            "position": {
+              "x": 2,
+              "y": 0
+            },
+            "customData": {}
+          },
+          "item_2": {
+            "item": "3905d98ae65b4984a9b8fe2e994d6ead",
+            "quantity": 2,
+            "orientation": 0,
+            "position": {
+              "x": 3,
+              "y": 0
+            },
+            "customData": {}
+          }
+        },
+        "shortcuts": {
+          "shortcut_0": "{}",
+          "shortcut_1": "{}",
+          "shortcut_2": "{}",
+          "shortcut_3": "{}"
+        }
+      },
+      "objectives": {
+        "Explore": {
+          "isCompleted": true,
+          "subObjectives": {
+            "Explore": {
+              "completeCount": 1,
+              "isCompleted": true
+            }
+          }
+        },
+        "TurnPowerOn": {
+          "isCompleted": true,
+          "subObjectives": {
+            "TurnPowerOn": {
+              "completeCount": 1,
+              "isCompleted": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "worldState": {
+    "worldSaveables": {},
+    "runtimeSaveables": {}
+  }
+}
