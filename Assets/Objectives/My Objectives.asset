@@ -35,3 +35,37 @@ MonoBehaviour:
           [count]/1'
         NormalText: 'Find the fuse box to turn the power on. Hint: check the basement
           [count]/1'
+  - ObjectiveKey: ActivatePressureplate
+    ObjectiveTitle:
+      GlocText: '*Activate the pressure plate outside'
+      NormalText: Activate the pressure plate outside
+    SubObjectives:
+    - SubObjectiveKey: ActivatePressureplate
+      CompleteCount: 1
+      ObjectiveText:
+        GlocText: '*Find the pressure plate outside and activate it using something
+          heavy'
+        NormalText: Find the pressure plate outside and activate it using something
+          heavy
+  - ObjectiveKey: ReturnValveHandle
+    ObjectiveTitle:
+      GlocText: '*Retun valve handle'
+      NormalText: Retun valve handle
+    SubObjectives:
+    - SubObjectiveKey: ReturnValveHandle
+      CompleteCount: 1
+      ObjectiveText:
+        GlocText: '*Find where the handle goes and return it'
+        NormalText: Find where the handle goes and return it
+  - ObjectiveKey: ReturnMarble
+    ObjectiveTitle:
+      GlocText: '*Return the marble'
+      NormalText: Return the marble
+    SubObjectives:
+    - SubObjectiveKey: ReturnMarble
+      CompleteCount: 1
+      ObjectiveText:
+        GlocText: '*The marble is used in a puzzle game, find the game and complete
+          it'
+        NormalText: The marble is used in a puzzle game, find the game and complete
+          it
