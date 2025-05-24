@@ -47,16 +47,6 @@ MonoBehaviour:
           heavy'
         NormalText: Find the pressure plate outside and activate it using something
           heavy
-  - ObjectiveKey: ReturnValveHandle
-    ObjectiveTitle:
-      GlocText: '*Retun valve handle'
-      NormalText: Retun valve handle
-    SubObjectives:
-    - SubObjectiveKey: ReturnValveHandle
-      CompleteCount: 1
-      ObjectiveText:
-        GlocText: '*Find where the handle goes and return it'
-        NormalText: Find where the handle goes and return it
   - ObjectiveKey: ReturnMarble
     ObjectiveTitle:
       GlocText: '*Return the marble'
@@ -69,3 +59,37 @@ MonoBehaviour:
           it'
         NormalText: The marble is used in a puzzle game, find the game and complete
           it
+  - ObjectiveKey: RetunrJournal
+    ObjectiveTitle:
+      GlocText: '*Return the Drakemore journal'
+      NormalText: Return the Drakemore journal
+    SubObjectives:
+    - SubObjectiveKey: RetunrJournal
+      CompleteCount: 1
+      ObjectiveText:
+        GlocText: '*Explore the mansion to find where Drakemore journal should go'
+        NormalText: Explore the mansion to find where Drakemore journal should go
+  - ObjectiveKey: ReturnPortrait
+    ObjectiveTitle:
+      GlocText: '*Return the portrait'
+      NormalText: Return the portrait
+    SubObjectives:
+    - SubObjectiveKey: ReturnPortrait
+      CompleteCount: 1
+      ObjectiveText:
+        GlocText: '*Find out which statue they speak of in the letter and return
+          the portrait to it'
+        NormalText: Find out which statue they speak of in the letter and return
+          the portrait to it
+  - ObjectiveKey: ReturnValve
+    ObjectiveTitle:
+      GlocText: '*Return the valve'
+      NormalText: Return the valve
+    SubObjectives:
+    - SubObjectiveKey: ReturnValve
+      CompleteCount: 1
+      ObjectiveText:
+        GlocText: '*Go down to the basement and place the valve to open the plumbing
+          pipes or something else... '
+        NormalText: 'Go down to the basement and place the valve to open the plumbing
+          pipes or something else... '

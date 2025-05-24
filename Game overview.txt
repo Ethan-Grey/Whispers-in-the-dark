@@ -1,0 +1,75 @@
+🎮 Game Overview – "Whispers in the Dark"
+Final Objective:
+Unlock and rotate three statues outside the mansion to face the house. Once all are aligned, a secret door opens to the ritual room. Entering the room plays a final cutscene, ending the game.
+
+🗿 Statue Rotation Requirements (Main Puzzles)
+Each of the 3 statues requires solving a unique puzzle to unlock rotation:
+
+Drakemore Journal Puzzle
+
+Find the journal locked in a trunk in the dining room (requires solving a padlock combination).
+
+Return the journal to the study bookshelf (upstairs).
+
+This reveals a hidden room with a lever. Pulling it unlocks the ability to rotate one statue.
+
+Valve Cap Puzzle
+
+Find the valve cap in the bathroom (ground floor, next to stairs).
+
+Return it to the basement and turn it.
+
+This unlocks a hidden room inside the main bedroom containing a lever that unlocks a second statue.
+
+Marble Minigame Puzzle
+
+Also found in the bathroom, the marble must be brought to the minigame setup in the main bedroom.
+
+Completing the game releases a key.
+
+Use the key to open a locked trunk in the same room containing a Drakemore family portrait.
+
+Return the portrait to its corresponding statue to unlock rotation.
+
+🧭 Game Flow (Step-by-Step)
+Spawn Point
+
+Player starts at the front gate.
+
+Front and side doors are locked.
+
+Gaining Entry
+
+Back entrance is blocked by boxes. Move them to access the door.
+
+Leads to a storage room.
+
+Restoring Power
+
+The next door is locked and requires power.
+
+Find lockpicks to open the control panel in the basement.
+
+Solve an electric panel puzzle to power up the mansion.
+
+This opens the main interior door, leading to the dining room and front foyer.
+
+Puzzle Item Locations
+
+Dining Room: Contains the locked trunk (journal inside). Clues for the combination are scattered nearby.
+
+Bathroom (near foyer): Contains the valve cap and marble.
+
+Basement: Contains the control panel and spot for valve cap.
+
+Second Floor:
+
+Study: Place the journal to reveal the secret room with lever.
+
+Main Bedroom:
+
+Place the marble to activate the minigame.
+
+Contains the locked trunk (requires key from minigame).
+
+Holds 2 secret areas: one for a lever, one for the ritual room.
