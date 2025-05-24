@@ -2,3 +2,5 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.fbx filter=lfs diff=lfs merge=lfs -text
+Assets/ThunderWire[[:space:]]Studio/** filter=lfs diff=lfs merge=lfs -text
+Assets/Horror_Mansion/** filter=lfs diff=lfs merge=lfs -text
