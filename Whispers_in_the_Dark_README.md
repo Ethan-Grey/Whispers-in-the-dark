@@ -29,11 +29,8 @@ The Drakemore mansion holds many secrets, including three mystical rotatable sta
 - **Puzzles:** Multi-step puzzles that reveal hidden rooms, levers, keys, and secrets.
 - **Paranormal Encounters:** Face eerie supernatural events and enemies (Watcher represented by the Book Head Monster).
 - **Statue Unlock Mechanic:** Solve puzzles to rotate three statues outside the mansion; aligning all statues towards the house unlocks the ritual room.
-- **Sanity Mechanic:** Manage your mental stability amidst haunting events.
 - **Multiple Endings:** Your choices and success in puzzles influence the game's ending.
 - **Checkpoint System:** Save progress at checkpoints to avoid replaying large sections.
-- **Timer:** Tracks gameplay duration.
-- **Life System:** Manage your health during encounters.
 - **Sound Effects:** Immersive audio cues enhance atmosphere and tension.
 - **Pause Menu & Game Complete Screen:** Control gameplay and view completion status.
 
@@ -51,10 +48,10 @@ The Drakemore mansion holds many secrets, including three mystical rotatable sta
 
 2. **Statue 2 Puzzle:**  
    - Use a pressure plate to unlock the bathroom door.  
-   - Inside, find a lever handle and a marble.  
-   - Use the lever handle in the basement control panel to progress.  
-   - The marble is used in a minigame in the bedroom.  
-   - Unlocking this statue involves solving these steps.
+   - Inside, find a valve handle and a marble.  
+   - Use the lever handle in the basement to progress.
+   - Unlocks a hidden in the bedroom with a lever
+   - Use this lever to unlock the first statue’s rotation.
 
 3. **Statue 3 Puzzle:**  
    - Complete a minigame in the bedroom using the marble to receive a key.  
@@ -78,7 +75,7 @@ The Drakemore mansion holds many secrets, including three mystical rotatable sta
 - **Look Around:** Mouse  
 - **Interact:** E  
 - **Pause Menu:** Esc  
-- **Inventory / Puzzle UI:** Tab (or as implemented)  
+- **Inventory / Puzzle UI:** Tab 
 
 ---
 
@@ -126,24 +123,6 @@ The Drakemore mansion holds many secrets, including three mystical rotatable sta
    - In Unity, go to **File > Build Settings**.  
    - Select your target platform (Windows recommended).  
    - Click **Build and Run** to play the game.
-
----
-
-## Credits
-
-- Developer: Ethan Grey  
-- Model Asset (Watcher): Book Head Monster from Unity Asset Store  
-- UFPS Asset for player movement and combat system  
-- ElevenLabs AI for voice lines  
-
----
-
-## Future Development Plans
-
-- Implement the final third statue puzzle steps.  
-- Add additional paranormal encounters and sound effects.  
-- Polish animations and UI elements.  
-- Introduce more branching endings based on player choices.
 
 ---
 
