@@ -17,7 +17,3 @@ Logs/
 # OS generated
 .DS_Store
 Thumbs.db
-
-# Ignore specific folders inside Assets
-Assets/Horror_Mansion/
-Assets/ThunderWire Studio/
