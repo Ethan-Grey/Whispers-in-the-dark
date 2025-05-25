@@ -1,0 +1,158 @@
+**Whispers in the Dark: Complete Assignment Guide**
+
+---
+
+### 🔹 Overview:
+
+This guide outlines how to complete your game development assignment using your horror game *Whispers in the Dark* to satisfy all 10 criteria and assessment tasks. Follow this step-by-step to ensure full coverage and maximum marks.
+
+---
+
+## ✍️ Task Breakdown
+
+### **Task 1: Analyse requirements and apply appropriate modelling tools (20 marks)**
+
+* **Narrative Design**:
+
+  * The story follows Ethan Granger, a private investigator exploring a haunted mansion linked to the cursed Drakemore family.
+  * Environmental storytelling (e.g. journals, portraits, secret rooms) reveals lore.
+
+* **Modelling Tools**:
+
+  * Use flowcharts for puzzle logic (3 statue paths).
+  * Use diagrams to map mansion layout and player progression.
+
+### **Task 2: Apply programming techniques and principles to write code (20 marks)**
+
+* **Code Samples**:
+
+  * `SimpleTriggerEvents.cs` for modular event triggering.
+  * `Jumpscare.cs` to handle jumpscare effects and cleanup.
+
+* **Best Practices**:
+
+  * DRY (Don’t Repeat Yourself) principles used via reusable methods.
+  * Serialized fields and UnityEvents for flexible editor use.
+
+### **Task 3: Apply appropriate design patterns (20 marks)**
+
+* **Design Patterns Used**:
+
+  * **Event-driven programming** with UnityEvents.
+  * **Component-based design** for modular behavior.
+  * **State handling** via puzzle progress (e.g. statue rotation unlocked only after puzzle completion).
+
+### **Task 4: Apply debugging activities to identify and manage issues and bugs (20 marks)**
+
+* **Debug Features**:
+
+  * Enable `showDebugMessages` in `SimpleTriggerEvents.cs` for real-time logs.
+  * Use Unity Console to trace logic bugs (e.g. why a lever doesn’t activate).
+  * Address collider issues or interaction bugs using gizmos and logging.
+
+* **Bug History Log**:
+
+  * Track common bugs (e.g. statue not rotating, door not opening) and fixes.
+
+### **Task 5: Design and create a variety of tests (10 marks)**
+
+* **Unit Tests**:
+
+  * Use Unity Test Framework to test `Jumpscare` and `SimpleTriggerEvents` scripts.
+  * Create mocks of the player and triggers.
+
+* **Test Cases**:
+
+  * Entering trigger area invokes event?
+  * Jumpscare deactivates objects after delay?
+  * Trigger only responds to Player tag?
+
+### **Task 6: Design and distribute game (10 marks)**
+
+* **Build**:
+
+  * Export as Windows Standalone `.exe` using Unity.
+  * Include all scenes, assets, and test files.
+
+* **Packaging**:
+
+  * Include README file with controls, game summary, and credits.
+  * Deliver final build via USB, cloud drive, or platform requested by instructor.
+
+---
+
+## 📊 Assessment Criteria Completion (50 Marks)
+
+### 1. **Storytelling (2 marks)**
+
+* Complete backstory, character motivation, and environmental clues.
+
+### 2. **Intro (2 marks)**
+
+* Title screen + fade-in or opening cutscene (optional).
+
+### 3. **Movement, Sections, Collisions (7 marks)**
+
+* Player moves with UFPS controller.
+* Distinct mansion areas.
+* Working collision detection for all interactive objects.
+
+### 4. **Sections, Checkpoints, Lives (7 marks)**
+
+* 3 statue puzzle paths = 3 sections.
+* Implement respawn logic or checkpoint saves.
+* Track player lives using UI (e.g. candles or heart icons).
+
+### 5. **Pause Menu, Timer (2 marks)**
+
+* ESC menu with resume/quit.
+* Track elapsed time with a UI element.
+
+### 6. **Sound Effects, Game Complete (3 marks)**
+
+* At least 3 sound effects (scream, doors, footsteps).
+* Ending screen after ritual is complete.
+
+### 7. **Performance (2 marks)**
+
+* Optimize assets.
+* Disable unnecessary objects.
+
+### 8. **Language, Tools, Version Control (5 marks)**
+
+* C# + Unity 2022/2023
+* GitHub or Unity Collaborate
+
+### 9. **Engagement, Replayability (5 marks)**
+
+* Puzzles with multiple ways to approach.
+* Rich lore rewards exploration.
+
+### 10. **Executable (5 marks)**
+
+* Final `.exe` with all files and instructions.
+
+---
+
+## 🔍 Final Checklist
+
+* [ ] All 6 tasks completed
+* [ ] All 10 assessment areas covered
+* [ ] All code is tested and debugged
+* [ ] Game exports without errors
+* [ ] README file included
+* [ ] Submission ready in required format
+
+---
+
+## 🚀 Tips for Success
+
+* Use Unity layers and tags to simplify collision logic.
+* Use `UnityEvent` for triggering flexible actions in the Inspector.
+* Keep playtesting to polish puzzles and avoid soft locks.
+* Keep your GitHub commits clean and readable.
+* Record a short gameplay video for presentation if needed.
+
+---
+
+Let me know if you'd like help with packaging the build, making the README, or writing the report.
