@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class PauseRunItJumpScare : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class PauseRunItJumpScare : MonoBehaviour
     [Header("Audio")]
     public AudioSource standingAudio;  // Audio when monster appears
     public AudioSource runningAudio;   // Audio when monster starts running
+
+    [Header("Events")]
+    public UnityEvent onJumpscareEnd;  // Event to invoke when jumpscare ends
 
     private bool triggered = false;
     private NavMeshAgent agent;
@@ -70,6 +74,12 @@ public class PauseRunItJumpScare : MonoBehaviour
 
         // Hide monster
         monster.SetActive(false);
+
+        // Invoke UnityEvent
+        if (onJumpscareEnd != null)
+        {
+            onJumpscareEnd.Invoke();
+        }
 
         // Destroy trigger so it doesn't repeat
         Destroy(gameObject);
