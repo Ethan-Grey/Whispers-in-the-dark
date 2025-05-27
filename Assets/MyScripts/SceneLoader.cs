@@ -6,8 +6,8 @@ using System.Collections;
 
 public class SceneLoader : MonoBehaviour
 {
-    public float delayBeforeSceneLoad = 2f; // how long (in seconds) to wait before loading the new scene
-    public string sceneName = ""; // the name of the scene you want to load (like "Level2")
+    public float delayBeforeSceneLoad = 2f; // how long to wait before loading the new scene
+    public string sceneName = ""; // the name of the scene you want to load
 
     // DRY: I put all the "wait and then load" logic in one coroutine (LoadEndingScene) so I don't have to copy-paste everywhere – it's like a shortcut!
     public void StartSceneLoad()

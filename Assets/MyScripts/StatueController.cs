@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -20,8 +21,8 @@ public class StatueController : MonoBehaviour
     /// </summary>
     public void EnableRotation()
     {
-        canRotate = true;
-        Debug.Log("🟢 Statue rotation ENABLED.");
+        canRotate = true; // allows the rotation of the statur
+        Debug.Log("🟢 Statue rotation ENABLED."); // logs a debug to say
     }
 
     /// <summary>
@@ -29,7 +30,7 @@ public class StatueController : MonoBehaviour
     /// </summary>
     public void DisableRotation()
     {
-        canRotate = false;
+        canRotate = false; // disables rotation
         Debug.Log("🔴 Statue rotation DISABLED.");
     }
 
